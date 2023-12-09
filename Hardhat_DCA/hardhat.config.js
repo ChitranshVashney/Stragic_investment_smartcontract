@@ -14,6 +14,7 @@ const ankr_api = process.env.Ankr_API;
 const COINMARKETCAP_API_KEY = process.env.COINMARKETCAP_API_KEY || "";
 const MAINNET_RPC_URL = `https://rpc.ankr.com/eth/${ankr_api}`;
 const GOERLI_RPC_URL = `https://rpc.ankr.com/eth_goerli/${ankr_api}`;
+const SEPOLIA_RPC_URL = `https://rpc.ankr.com/eth_sepolia/${ankr_api}`;
 const poly_RPC_URL = `https://rpc.ankr.com/polygon/${ankr_api}`;
 const bnb_RPC_URL = `https://rpc.ankr.com/bsc/${ankr_api}`;
 const arbi_RPC_URL = `https://rpc.ankr.com/arbitrum/${ankr_api}`;
@@ -40,6 +41,11 @@ module.exports = {
       url: GOERLI_RPC_URL,
       chainId: 5,
       blockConfirmations: 6,
+    },
+    sepolia: {
+      url: SEPOLIA_RPC_URL,
+      chainId: 11155111,
+      blockConfirmations: 1,
     },
     polygon: {
       url: poly_RPC_URL,
@@ -113,6 +119,7 @@ module.exports = {
       polygon: "M72KYXSB62ZTFGD58APVIJ76VEYQ9H97VY",
       arbitrumOne: "IARHKU216PBQDDFJCRM6U7U745VMWW43K9",
       goerli: "63148EMF7NGUF7YUF5B12QYPXBBGP71UA1",
+      sepolia: "63148EMF7NGUF7YUF5B12QYPXBBGP71UA1",
       optimisticEthereum: "FE29CHGF31B2QUZFVIVM2CQ4HM24AY5YDZ",
       bsc: "Y4K2D5QG3VP45VJD32FSP75XQHXFWEIXB6",
       opera: "KQI7M7695VS84748IKVNDEBGVT727SHDTQ",

@@ -80,5 +80,14 @@ const addressConfig = {
     LinkAddress: "0x6F43FF82CCA38001B6699a8AC47A2d0E66939407",
     WbtcAddress: "0xC04B0d3107736C32e19F1c62b2aF67BE61d63a05",
   },
+  11155111: {
+    WethAddress: "0x7b79995e5f793A07Bc00c21412e50Ecae098E7f9",
+    chainlinkFeed: "0x694AA1769357215DE4FAC081bf1f309aDC325306",
+    forwarder: "0xE041608922d06a4F26C0d4c27d8bCD01daf1f792",
+    fee: ethers.utils.parseUnits("0.01", 18),
+    UsdcAddress: "0x8267cF9254734C6Eb452a7bb9AAF97B392258b21",
+    LinkAddress: "0x779877A7B0D9E8603169DdbD7836e478b4624789",
+    WbtcAddress: "0xC04B0d3107736C32e19F1c62b2aF67BE61d63a05",
+  },
 };
 module.exports = { addressConfig };
