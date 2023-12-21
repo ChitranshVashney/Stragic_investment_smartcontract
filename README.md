@@ -25,6 +25,7 @@ To get started with Strategic Investment, follow these steps:
 - Clone the repository: git clone https://github.com/ChitranshVashney/Stragic_investment_smartcontract
 or
 - You can visit [here](https://chain-link-hackathon-theta.vercel.app/) to see the platform.
+- Smart contract link - [Contract Link](https://sepolia.etherscan.io/address/0xaa86956d8f96b8ad6e018305365ed5aa98bcd542#code)
 
 ## Contributors
 - [Chitranshu Varshney](https://github.com/ChitranshVashney)
