@@ -1,0 +1,402 @@
+// Description: This file contains the styles for the SCA page.
+   
+.dcaBox {
+        width: 80vw;
+        min-height: 86vh;
+        background-color: $dark-box-bg;
+        box-shadow: 0 2px 26px rgba(0, 0, 0, 0.1);
+        padding: 2.5rem 5rem;
+        margin-top: 1rem;
+        border-radius: 2.5rem;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);
+       
+
+        .flex{
+            display: flex;
+            gap: 2rem;
+            .creationContainer{
+                width: 45%;
+                .title {
+                    font-weight: 600;
+                    color: $dark-primary;
+                    font-size: 1.2rem;
+                    font-style: normal;
+                   font-family: Poppins;
+                }
+                .infoAndClearAll {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin: 0.5rem 0;
+                    p {
+                        font-weight: 500;
+                        font-size: 0.9rem;
+                        color: $dark-primary;
+                        span {
+                            color: $dark-percentageUP;
+                        }
+                    }
+                    button {
+                        color: $dark-secondary;
+                        font-weight: 600;
+                        font-size: 0.9rem;
+                        background: none;
+                        border: none;
+                        cursor: pointer;
+                    }
+                }
+                .tokensContainer {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-column-gap: 1rem;
+                    .buyToken {
+                        display: flex;
+                        align-items: center;
+                        margin: 1rem 0;
+                        .token {
+                            width: 90%;
+                            display: flex;
+                            align-items: center;
+                            background: $dark-bg;
+                            padding: 0 0.7rem;
+                            border-radius: 10px;
+                            .tokenInfo {
+                                display: flex;
+                                align-items: center;
+                                gap: 1rem;
+                                width: 30%;
+                                img {
+                                    width: 30px;
+                                    height: 30px;
+                                }
+                                h2 {
+                                }
+                            }
+                            .tokenPercentage {
+                                width: 70%;
+                                input {
+                                    width: 100%;
+                                    background: none;
+                                    padding: 0.5rem 0.5rem;
+                                    text-align: center;
+                                    outline: none;
+                                }
+                                input:focus {
+                                    border: none;
+                                }
+                            }
+                            .Percentage {
+                                font-weight: 700;
+                                font-size: 0.9rem;
+                                color: $dark-secondary;
+                            }
+                        }
+                        svg {
+                            width: 10%;
+                            fill: $dark-percentageDown;
+                            cursor: pointer;
+                        }
+                    }
+                }
+    
+                .addTokenButton {
+                    width: 100%;
+                    margin: 0.2rem 0;
+                    background-color: $dark-buttons;
+                    // border: none;
+                    // @include button-responsive(mobile);
+                    display: flex;
+                    border-radius: 10px;
+                    padding: 0.5rem;
+                    gap: 1rem;
+                    align-items: center;
+                    justify-content: center;
+                    font-weight: 600;
+                    font-size: 1rem;
+                    img {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+                .seprator {
+                    background-color: $dark-tertiary;
+                    margin: 1rem auto;
+                    width: 95%;
+                    height: 1px;
+                }
+                .inputGroup {
+                    width: 50%;
+                }
+                .inputGroupContainer{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    .inputGroup {
+                        width:48%;
+                        .sellInputTrade{
+                            display: flex;
+                            align-items: center;
+                            background-color: $dark-bg;
+                            border-radius: 10px;
+                            input { 
+                                width:100%;
+                                text-align: center;
+                                padding: 0.5rem 0.5rem;
+                                background: none;
+                                border: none;
+                                outline: none;
+                            }
+                        }
+                    }
+                    
+                }
+                .smallTitle {
+                    font-weight: 700;
+                    color: $dark-tertiary;
+                    font-size: 0.9rem;
+                    margin: 0.2rem 0 0.5rem 0;
+                    font-family: Poppins;
+                }
+    
+                .sellInput {
+                    display: flex;
+                    align-items: center;
+                    background-color: $dark-bg;
+                    border-radius: 10px;
+                    input {
+                        width: 40%;
+                        text-align: center;
+                        padding: 0.5rem 0.5rem;
+                        background: none;
+                        border: none;
+                        outline: none;
+                    }
+                    input:focus {
+                        // border: 1px solid $dark-secondary;
+                    }
+                    .inputSeprator {
+                        width: 1px;
+                        height: 1.3rem;
+                        margin: 0.5rem;
+                        background-color: $dark-tertiary;
+                    }
+                    .sellTokenInfo {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 60%;
+                        gap: 1rem;
+                        justify-content: center;
+                        cursor: pointer;
+                        padding: 0 0.5rem;
+                        img {
+                            width: 22px;
+                            width: 22px;
+                        }
+                        h3 {
+                        }
+                        svg {
+                            width: 22px;
+                            height: 22px;
+                        }
+                    }
+                }
+    
+                .cycle_container {
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: 31% 31% 31%;
+                    justify-content: space-between;
+                    justify-items: center;
+    
+                    .cycle {
+                        padding: 0.5rem 0;
+                        border: 1px solid $dark-secondary;
+                        width: 100%;
+                        text-align: center;
+                        border-radius: 10px;
+                        font-weight: 600;
+                        font-size: 0.9rem;
+                        cursor: pointer;
+                    }
+                    .cycle.active {
+                        border: 1px solid $dark-secondary;
+                        background-color: $dark-secondary;
+                        color: $dark-box-bg;
+                    }
+                }
+    
+                .monthDate {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    h4 {
+                        font-weight: 700;
+                        color: $dark-primary;
+                        font-size: 0.9rem;
+                        width: 40%;
+                    }
+                    .localTimeInputs {
+                        border-radius: 10px;
+                        background-color: $dark-bg;
+                        display: flex;
+                        align-items: center;
+                        width: 60%;
+    
+                        input {
+                            background: none;
+                            padding: 0.5rem 0;
+                            width: 100%;
+                            text-align: center;
+                            font-weight: 600;
+                            font-size: 0.9rem;
+                            outline: none;
+                        }
+                    }
+                }
+                .weekdays {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                    grid-gap: 1rem;
+                    justify-items: center;
+                    .weekday {
+                        padding: 0.5rem 0;
+                        border: 1px solid $dark-secondary;
+                        width: 100%;
+                        text-align: center;
+                        border-radius: 10px;
+                        font-weight: 600;
+                        font-size: 0.9rem;
+                    }
+                    .weekday.active {
+                        border: 1px solid $dark-secondary;
+                        background-color: $dark-secondary;
+                        color: $dark-box-bg;
+                    }
+                }
+                .localTime {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 100%;
+                    h4 {
+                        font-weight: 700;
+                        color: $dark-primary;
+                        font-size: 0.9rem;
+                        width: 30%;
+                    }
+                    .localTimeInputs {
+                        border-radius: 10px;
+                        background-color: $dark-bg;
+                        display: flex;
+                        align-items: center;
+                        width: 40%;
+                        .localTime_seprator {
+                            width: 20%;
+                            text-align: center;
+                            font-weight: 600;
+                            font-size: 0.9rem;
+                        }
+                        input {
+                            background: none;
+                            padding: 0.5rem 0;
+                            width: 40%;
+                            text-align: center;
+                            font-weight: 600;
+                            font-size: 0.9rem;
+                            outline: none;
+                        }
+                    }
+                }
+    
+               
+    
+                .reviewBTN {
+                    margin-top: 1rem;
+                    // @include button-responsive(mobile);
+                    display: flex;
+                    border-radius: 10px;
+                    padding: 1rem;
+                    gap: 1rem;
+                    align-items: center;
+                    justify-content: center;
+                    font-weight: 600;
+                    font-size: 1.5rem;
+                }
+            }
+            .actions{
+                width: 45%;
+            }
+        }
+        
+    }
+    .reviewDca {
+
+        padding: 0 0.3rem;
+        .smallTimeLine {
+            // margin: 2rem 0;
+            font-weight: 500;
+            font-size: 1rem;
+            font-family: Poppins;
+        }
+        h3 {
+            font-family: Poppins;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+
+            line-height: normal;
+            color: $dark-primary;
+            margin: 1.5rem 0 1rem 0;
+        }
+        .text {
+            // padding: 0 1rem;
+
+            margin: 1rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .bulletContainer {
+                width: 5%;
+                svg {
+                    width: 6px;
+                    height: 6px;
+                }
+            }
+            p {
+                width: 95%;
+                color: $dark-primary;
+                font-family: Poppins;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+
+                line-height:1.5rem;
+
+                span {
+                    color: #00de3b;
+                }
+            }
+        }
+        .revieweDcaBTNContinaer {
+            width: 100%;
+            display: flex;
+            gap: 1rem;
+            button {
+                // @include button-responsive(laptop);
+                width: 80%;
+                border-radius: 10px;
+                padding: 0.6rem 0;
+                margin-top: 1rem;
+                font-size: 0.9rem;
+                font-weight: 600;
+            }
+            .confirm {
+                background-color: $dark-secondary;
+            }
+            .edit {
+                background-color: $dark-tertiary;
+            }
+        }
+    }
+   
