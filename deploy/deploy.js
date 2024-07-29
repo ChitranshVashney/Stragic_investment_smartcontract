@@ -20,23 +20,21 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
 
   deployer = deployer.connect(provider);
 
-
   const alpha = await hre.ethers.getContractFactory("DcaOperation", deployer);
   // console.log(alpha);
-  const AlphaVault = await alpha.deploy(
+  const Strategy = await alpha.deploy(
     addressConfig[11155111].WethAddress,
     addressConfig[11155111].chainlinkFeed,
     addressConfig[11155111].forwarder,
     addressConfig[11155111].fee.toString(),
     { gasLimit: 5000000 }
   );
-  let a=await AlphaVault.deployed();
-  let b= await a.deployTransaction.wait();
+  let a = await Strategy.deployed();
+  let b = await a.deployTransaction.wait();
   console.log(b);
-// await a.wait(2)
- 
-  
-  console.log("AlphaVault deployed to:", AlphaVault.address);
+  // await a.wait(2)
+
+  console.log("Strategy deployed to:", Strategy.address);
   const verify = async (contractAddress, args) => {
     console.log("Verifying contract...");
     try {
@@ -53,7 +51,7 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
     }
   };
   if (true) {
-    await verify(AlphaVault.address, [
+    await verify(Strategy.address, [
       addressConfig[11155111].WethAddress,
       addressConfig[11155111].chainlinkFeed,
       addressConfig[11155111].forwarder,
