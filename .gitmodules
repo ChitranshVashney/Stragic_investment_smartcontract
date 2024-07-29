@@ -1,3 +1,0 @@
-[submodule "dca_foundry/lib/chainlink"]
-	path = dca_foundry/lib/chainlink
-	url = https://github.com/smartcontractkit/chainlink
