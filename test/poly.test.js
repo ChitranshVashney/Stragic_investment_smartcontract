@@ -54,7 +54,7 @@ describe.only("Alpha Vault DCA", function () {
 
   it("add user funds in dca", async function () {
     user = await ethers.getImpersonatedSigner(
-      "0xC63CEc5e486C3504364BFf36BCE1e3c51714762D"
+      "0xe7804c37c13166fF0b37F5aE0BB07A3aEbb6e245"
     );
     let USDCapprove = await USDC.connect(user).approve(
       contractAddress,
@@ -154,9 +154,9 @@ describe.only("Alpha Vault DCA", function () {
           `https://polygon.api.0x.org/swap/v1/quote?${qs.stringify(params)}`,
           { headers: { "0x-api-key": ex } }
         );
-        // // const responses = await response.json;
+        // const responses = await response.json;
         // console.log(response.data);
-        await helpers.time.increase(100);
+        await helpers.time.increase(1000);
         let runDCA = await avdca.runUserDCA(
           user.address,
           i,

@@ -29,8 +29,7 @@ module.exports = {
   networks: {
     hardhat: {
       forking: {
-        url: GOERLI_RPC_URL,
-
+        url: poly_RPC_URL,
       },
       allowUnlimitedContractSize: true,
     },
