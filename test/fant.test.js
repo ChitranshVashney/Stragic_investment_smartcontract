@@ -6,7 +6,7 @@ const { BigNumber } = require("bignumber.js");
 const qs = require("qs");
 const helpers = require("@nomicfoundation/hardhat-network-helpers");
 // const fetch = require("fetch")
-describe.only("Alpha Vault DCA", function () {
+describe.only("Strategy DCA", function () {
   let deployer,
     AVDCA,
     avdca,
